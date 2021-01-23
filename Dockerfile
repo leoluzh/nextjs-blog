@@ -4,7 +4,7 @@ FROM node:alpine AS deps
 WORKDIR /opt/app
 COPY package*.json ./
 #RUN yarn install --frozen-lockfile
-RUN npm ci
+RUN npm install
 
 # rebuild the source code only when needed - speed up building
 FROM node:alpine AS builder
