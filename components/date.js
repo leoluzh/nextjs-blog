@@ -1,6 +1,6 @@
-import { parseISO , format } from 'data-fns' ;
+import { parseISO , format } from 'date-fns' ;
 
 export default function Date( { dateString } ){
-    const date = parseISO(dataString);
-    return <time dateTime={dataString}>{format(date, 'LLLL d, yyyy' )}</time>
+    const date = parseISO(dateString);
+    return <time dateTime={dateString}>{format(date, 'LLLL d, yyyy' )}</time>
 }
